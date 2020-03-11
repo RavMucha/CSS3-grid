@@ -1,0 +1,9 @@
+.basic-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+    grid-template-columns: repeat(12, 1fr);
+    /* grid-template-columns: repeat(12, minmax(240px, 1fr)); */
+    /*impicit grid*/
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /*auto-fill adds empty space, auto-fit expands the columns*/
+}
